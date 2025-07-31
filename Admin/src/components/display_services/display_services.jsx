@@ -9,7 +9,7 @@ const Display_services = () => {
 
 
     const remove_product = async(id)=>{
-        let res = await axios.post('http://localhost:3000/removeproduct',{id})
+        let res = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/removeproduct',{id})
         getservice()
     }
   return (
