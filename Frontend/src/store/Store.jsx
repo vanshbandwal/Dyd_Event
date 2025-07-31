@@ -12,15 +12,15 @@ export const UserContextProvider = (props)=>{
     const [reviewPage,setreviewPage] = useState([])
     useEffect(() => {
     const fetchServices = async () => {
-        let res = await axios.get('http://localhost:3000/allservices');
+        let res = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allservices');
         setservice(res.data.Services);
-        let resserv = await axios.get('http://localhost:3000/allReview');
+        let resserv = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allReview');
         setreview(resserv.data.Services);
-        let resServicePage = await axios.get('http://localhost:3000/allServicePage');
+        let resServicePage = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allServicePage');
         setservicepage(resServicePage.data.Services);
-        let resGallery = await axios.get('http://localhost:3000/allImages');
+        let resGallery = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allImages');
         setgallery(resGallery.data.Services);
-         let resreviewpage = await axios.get('http://localhost:3000/allReviewpage');
+         let resreviewpage = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allReviewpage');
         setreviewPage(resreviewpage.data.Services);
     };
 
