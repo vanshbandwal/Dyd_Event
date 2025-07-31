@@ -9,7 +9,7 @@ const Display_Gallery = () => {
 
 
     const remove_product = async(id)=>{
-        let res = await axios.post('http://localhost:3000/removeImages',{id})
+        let res = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/removeImages',{id})
         getservice()
     }
   return (
