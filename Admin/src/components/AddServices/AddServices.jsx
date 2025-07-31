@@ -23,10 +23,10 @@ const AddServices = () => {
         let formdata = new FormData()
         formdata.append('service', image)
         console.log(formdata)
-        let response = await axios.post('http://localhost:3000/upload', formdata)
+        let response = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/upload', formdata)
         if (response.data.success === true) {
             service.image = response.data.image_url;
-            let d = await axios.post('http://localhost:3000/addServicePage', service)
+            let d = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/addServicePage', service)
             if (d.data.success === true) {
                 alert(d.data.message)
                 setserviceDetails({
