@@ -7,7 +7,7 @@ import axios from 'axios'
 const Client = () => {
   const {fetchClient} = useContext(Admincontext)
   const remove_client = async(id)=>{
-    let res = await axios.post('http://localhost:3000/removeClient',{'id':id})
+    let res = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/removeClient',{'id':id})
     if(res.data.success === true){
         alert('Remove client successfully')
     }
