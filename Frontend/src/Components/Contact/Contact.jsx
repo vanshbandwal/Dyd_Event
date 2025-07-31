@@ -19,7 +19,7 @@ const Contact = () => {
   const handlesubmit = async (e) => {
     e.preventDefault() // Prevent page reload on submit
     try {
-      const res = await axios.post('http://localhost:3000/contact', formdetail)
+      const res = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/contact', formdetail)
       console.log(res.data)
       alert("Message sent!")
       if (res.data.success === true) {
