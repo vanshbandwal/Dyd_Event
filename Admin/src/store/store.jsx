@@ -13,17 +13,17 @@ const AdmincontextProvider = (props)=>{
     const [fetchReviewPage,setfetchfetchReviewPage] = useState([])
     const [fetchClient,setfetchClient] = useState([])
     const getservice = async()=>{
-        let resService = await axios.get('http://localhost:3000/allservices')
+        let resService = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allservices')
         setfetchservice(resService.data.Services)
-        let resReview = await axios.get('http://localhost:3000/allReview')
+        let resReview = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allReview')
         setfetchReview(resReview.data.Services)
-        let resServicePage = await axios.get('http://localhost:3000/allServicePage')
+        let resServicePage = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allServicePage')
         setfetchServicePage(resServicePage.data.Services)
-        let resReviewpage = await axios.get('http://localhost:3000/allReviewpage')
+        let resReviewpage = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allReviewpage')
         setfetchfetchReviewPage(resReviewpage.data.Services)
-        let resImages = await axios.get('http://localhost:3000/allImages')
+        let resImages = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allImages')
         setfetchImage(resImages.data.Services)
-        let resClient = await axios.get('http://localhost:3000/allClient')
+        let resClient = await axios.get('http://dyd-event-vanshbandwals-projects.vercel.app/allClient')
         setfetchClient(resClient.data.Services)
     }
     useEffect(()=>{
