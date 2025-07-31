@@ -9,7 +9,7 @@ const DisplayServices = () => {
 
 
     const remove_Review = async(id)=>{
-        let res = await axios.post('http://localhost:3000/removeServicePage',{id})
+        let res = await axios.post('http://dyd-event-vanshbandwals-projects.vercel.app/removeServicePage',{id})
         getservice()
     }
   return (
